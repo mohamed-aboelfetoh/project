@@ -66,6 +66,7 @@ nav {
 
 /* start gallery*/
 main > .images, main > .video, main > .audio {
+    width :100%;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
@@ -75,13 +76,14 @@ main > .images, main > .video, main > .audio {
 
 .images > .image, .video > video, .audio > audio {
     flex: 1 1 300px;
-    max-width: 400px;
+    max-width: 340px;
 }
 
-.images > .image > img, .video > video > source, .audio > audio > audio {
+.images > .image > img, .video > video > source, .audio > audio > source {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
+
 /* end gallery*/
 
 /* start login and signup */
